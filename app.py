@@ -60,7 +60,7 @@ app.num_guesses = 0
 
 @app.route("/")
 def index():
-    flash("Hey sexy ;)")
+    flash("Word Guessing Game!!! Enter your first 5 letter guess.")
     return render_template("index.html")
 
 @app.route("/word", methods=["POST", "GET"])
